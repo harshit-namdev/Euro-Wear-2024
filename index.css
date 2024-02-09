@@ -1,0 +1,27 @@
+.logo-slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* Adjust the width of the slider container */
+}
+
+.logo-slider.reverse {
+    animation: slideReverse 6s infinite linear;
+}
+
+@keyframes slideReverse {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+}
